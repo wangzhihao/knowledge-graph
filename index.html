@@ -41,69 +41,10 @@
  // Create a new directed graph
  var g = new dagreD3.graphlib.Graph().setGraph({});
  
- // Set up the edges
- 
- g.setNode('BOOKER.D_DAILY_BUYABLE_OFFER_LISTINGS', {style : 'filled', shape: 'folder', color : '#f47835', label:'BOOKER.D_DAILY_BUYABLE_OFFER_LISTINGS', rx: 50, ry: 50});
-g.setNode('compaction_d_daily_buyable_offer_listings_WHITELISTED', {color : '#00aedb', style : 'filled', shape : 'ellipse', rx: 50, ry: 50});
-g.setNode('S3CACHE.D_DAILY_BUYABLE_OFFER_LISTINGS', {style : 'filled', shape: 'folder', color : '#f47835', label:'S3CACHE.D_DAILY_BUYABLE_OFFER_LISTINGS', rx: 50, ry: 50});
-g.setNode('S3CACHE.D_DAILY_BUYABLE_OFFER_LISTINGS', {style : 'filled', shape: 'folder', color : '#f47835', label:'S3CACHE.D_DAILY_BUYABLE_OFFER_LISTINGS', rx: 50, ry: 50});
-g.setNode('BOOKER.D_DAILY_BUYABLE_OFFER_LISTINGS', {style : 'filled', shape: 'folder', color : '#f47835', label:'BOOKER.D_DAILY_BUYABLE_OFFER_LISTINGS', rx: 50, ry: 50});
-g.setNode('COMPACTION.D_DAILY_BUYABLE_OFFER_LISTINGS', {style : 'filled', shape: 'folder', color : '#f47835', label:'COMPACTION.D_DAILY_BUYABLE_OFFER_LISTINGS', rx: 50, ry: 50});
-g.setNode('retention', {color : '#00aedb', style : 'filled', shape : 'ellipse', rx: 50, ry: 50});
-g.setNode('COMPACTION.D_DAILY_BUYABLE_OFFER_LISTINGS', {style : 'filled', shape: 'folder', color : '#f47835', label:'COMPACTION.D_DAILY_BUYABLE_OFFER_LISTINGS', rx: 50, ry: 50});
-g.setNode('CANDIDATE_MERCHANTS', {style : 'filled', shape: 'folder', color : '#8ec127', label:'EDX: etlm/ivh-etl-candidate-merchants-2/f-1-r-1-daily', rx: 50, ry: 50});
-g.setNode('LowestPrice', {color : '#00aedb', style : 'filled', shape : 'ellipse', rx: 50, ry: 50});
-g.setNode('S3CACHE.D_DAILY_BUYABLE_OFFER_LISTINGS', {style : 'filled', shape: 'folder', color : '#f47835', label:'S3CACHE.D_DAILY_BUYABLE_OFFER_LISTINGS', rx: 50, ry: 50});
-g.setNode('ICP.LOWEST_PRICE', {style : 'filled', shape: 'folder', color : '#f47835', label:'ICP.LOWEST_PRICE', rx: 50, ry: 50});
-g.setNode('d_listings_lowest_price', {style : 'filled', shape: 'folder', color : '#c9c9ff', label:'S3: e_input/d_listings_lowest_price', rx: 50, ry: 50});
-g.setNode('d_listings_lowest_price_edx', {style : 'filled', shape: 'folder', color : '#c9c9ff', label:'S3: e_input/d_listings_lowest_price_edx', rx: 50, ry: 50});
-g.setNode('EST_FBA_FEE_REPORTS', {style : 'filled', shape: 'folder', color : '#8ec127', label:'EDX: fba-dev-profitability/fba-fee-preview-report/na-daily', rx: 50, ry: 50});
-g.setNode('FeeReportsVCF', {color : '#00aedb', style : 'filled', shape : 'ellipse', rx: 50, ry: 50});
-g.setNode('ICP.EST_FBA_FEE_REPORTS_VCF', {style : 'filled', shape: 'folder', color : '#f47835', label:'ICP.EST_FBA_FEE_REPORTS_VCF', rx: 50, ry: 50});
-g.setNode('d_est_fba_fee_report_vcf', {style : 'filled', shape: 'folder', color : '#c9c9ff', label:'S3: e_input/d_est_fba_fee_report_vcf', rx: 50, ry: 50});
-g.setNode('ICP.EST_FBA_FEE_REPORTS_VCF', {style : 'filled', shape: 'folder', color : '#f47835', label:'ICP.EST_FBA_FEE_REPORTS_VCF', rx: 50, ry: 50});
-g.setNode('d_est_fba_fee_report_vcf', {style : 'filled', shape: 'folder', color : '#c9c9ff', label:'S3: e_input/d_est_fba_fee_report_vcf', rx: 50, ry: 50});
-g.setNode('RemoteFeeReports', {color : '#00aedb', style : 'filled', shape : 'ellipse', rx: 50, ry: 50});
-g.setNode('ICP.EST_REMOTE_FBA_FEE', {style : 'filled', shape: 'folder', color : '#f47835', label:'ICP.EST_REMOTE_FBA_FEE', rx: 50, ry: 50});
-g.setNode('d_est_remote_fba_fee_report', {style : 'filled', shape: 'folder', color : '#c9c9ff', label:'S3: e_input/d_est_remote_fba_fee_report', rx: 50, ry: 50});
-g.setNode('LTS_DAILY_REPORTS_EDX', {style : 'filled', shape: 'folder', color : '#8ec127', label:'EDX: fba-dev-profitability/ltsf-daily-estimation/daily-ltsf-estimation-without-auto-removal', rx: 50, ry: 50});
-g.setNode('LtsDailyReportsEDX', {color : '#00aedb', style : 'filled', shape : 'ellipse', rx: 50, ry: 50});
-g.setNode('ICP.LTS_DAILY_REPORTS_EDX', {style : 'filled', shape: 'folder', color : '#f47835', label:'ICP.LTS_DAILY_REPORTS_EDX', rx: 50, ry: 50});
-g.setNode('lts_daily_reports_edx', {style : 'filled', shape: 'folder', color : '#c9c9ff', label:'S3: e_input/lts_daily_reports_edx', rx: 50, ry: 50});
-g.setNode('D_MARKETPLACE_MERCHANTS', {style : 'filled', shape: 'folder', color : '#8ec127', label:'EDX: etlm/ivh-etl-unmodified-d-marketplace-merchants/f-1-r-1-daily', rx: 50, ry: 50});
-g.setNode('InvOfferListings', {color : '#00aedb', style : 'filled', shape : 'ellipse', rx: 50, ry: 50});
-g.setNode('O_FN_SKU_MAPS', {style : 'filled', shape: 'folder', color : '#8ec127', label:'EDX: etlm/ivh-etl-o-fn-sku-maps-1/f-1-r-1-daily', rx: 50, ry: 50});
-g.setNode('O_MS_MARKETPLACES', {style : 'filled', shape: 'folder', color : '#8ec127', label:'EDX: etlm/ivh-etl-o-ms-marketplaces/f-1-m-1-7-771770-daily', rx: 50, ry: 50});
-g.setNode('ICP.INV_OFFER_LISTINGS', {style : 'filled', shape: 'folder', color : '#f47835', label:'ICP.INV_OFFER_LISTINGS', rx: 50, ry: 50});
-g.setNode('inv_offer_listings', {style : 'filled', shape: 'folder', color : '#c9c9ff', label:'S3: e_input/inv_offer_listings', rx: 50, ry: 50});
-g.setEdge('BOOKER.D_DAILY_BUYABLE_OFFER_LISTINGS', 'compaction_d_daily_buyable_offer_listings_WHITELISTED', {label: ''});
-g.setEdge('compaction_d_daily_buyable_offer_listings_WHITELISTED', 'S3CACHE.D_DAILY_BUYABLE_OFFER_LISTINGS', {label: ''});
-g.setEdge('compaction_d_daily_buyable_offer_listings_WHITELISTED', 'BOOKER.D_DAILY_BUYABLE_OFFER_LISTINGS', {label: ''});
-g.setEdge('S3CACHE.D_DAILY_BUYABLE_OFFER_LISTINGS', 'compaction_d_daily_buyable_offer_listings_WHITELISTED', {label: ''});
-g.setEdge('COMPACTION.D_DAILY_BUYABLE_OFFER_LISTINGS', 'retention', {label: ''});
-g.setEdge('retention', 'COMPACTION.D_DAILY_BUYABLE_OFFER_LISTINGS', {label: ''});
-g.setEdge('CANDIDATE_MERCHANTS', 'LowestPrice', {label: ''});
-g.setEdge('LowestPrice', 'd_listings_lowest_price', {label: ''});
-g.setEdge('LowestPrice', 'ICP.LOWEST_PRICE', {label: ''});
-g.setEdge('LowestPrice', 'd_listings_lowest_price_edx', {label: ''});
-g.setEdge('S3CACHE.D_DAILY_BUYABLE_OFFER_LISTINGS', 'LowestPrice', {label: ''});
-g.setEdge('S3CACHE.D_DAILY_BUYABLE_OFFER_LISTINGS', 'InvOfferListings', {label: ''});
-g.setEdge('EST_FBA_FEE_REPORTS', 'RemoteFeeReports', {label: ''});
-g.setEdge('EST_FBA_FEE_REPORTS', 'FeeReportsVCF', {label: ''});
-g.setEdge('FeeReportsVCF', 'ICP.EST_FBA_FEE_REPORTS_VCF', {label: ''});
-g.setEdge('FeeReportsVCF', 'd_est_fba_fee_report_vcf', {label: ''});
-g.setEdge('d_est_fba_fee_report_vcf', 'FeeReportsVCF', {label: ''});
-g.setEdge('ICP.EST_FBA_FEE_REPORTS_VCF', 'FeeReportsVCF', {label: ''});
-g.setEdge('RemoteFeeReports', 'ICP.EST_REMOTE_FBA_FEE', {label: ''});
-g.setEdge('RemoteFeeReports', 'd_est_remote_fba_fee_report', {label: ''});
-g.setEdge('LTS_DAILY_REPORTS_EDX', 'LtsDailyReportsEDX', {label: ''});
-g.setEdge('LtsDailyReportsEDX', 'lts_daily_reports_edx', {label: ''});
-g.setEdge('LtsDailyReportsEDX', 'ICP.LTS_DAILY_REPORTS_EDX', {label: ''});
-g.setEdge('D_MARKETPLACE_MERCHANTS', 'InvOfferListings', {label: ''});
-g.setEdge('InvOfferListings', 'inv_offer_listings', {label: ''});
-g.setEdge('InvOfferListings', 'ICP.INV_OFFER_LISTINGS', {label: ''});
-g.setEdge('O_FN_SKU_MAPS', 'InvOfferListings', {label: ''});
-g.setEdge('O_MS_MARKETPLACES', 'InvOfferListings', {label: ''});
+ g.setNode('RSA', {});
+ g.setNode('RSA CRACK', {});
+ g.setNode('Shor’s Algorithm', {});
+ g.setEdge('RSA', 'RSA CRACK', {});
 
  
  // Set up an SVG group so that we can translate the final graph.
