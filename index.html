@@ -64,7 +64,7 @@
  
  //use graphviz as layout tool
  function render (){
-     var src = $("#source").src;
+     var src = $("#source").text();
      var result = Viz(src, { format : "svg", engine : "dot" })    
      var svgResult = _.find($(result), function(item){return item.tagName && item.tagName == 'svg';});
      $('#base_graph svg').remove();
