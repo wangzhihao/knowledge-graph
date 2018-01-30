@@ -8,8 +8,7 @@
  <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
  <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.6/lodash.min.js"></script>
  <script src="//github.com/mdaines/viz.js/releases/download/v1.8.0/viz-lite.js"></script>
- 
- 
+
  <style id="css">
  text {
    font-weight: 300;
@@ -35,24 +34,20 @@
  svg { position:fixed; top:0; left:0; height:100%; width:100% }
  </style>
  
+<pre id="source">
+'RSA' -> 'RSA CRACK';
+'RSA CRACK' -> 'Shor’s Algorithm';
+</pre>
  <svg><g id="base_graph"></g></svg>
  
- <script id="js">
- // Create a new directed graph
- var g = new dagreD3.graphlib.Graph().setGraph({});
- 
- g.setNode('RSA', {});
- g.setNode('RSA CRACK', {});
- g.setNode('Shor’s Algorithm', {});
- g.setEdge('RSA', 'RSA CRACK', {});
-
+ <script id="js">({});
  
  // Set up an SVG group so that we can translate the final graph.
  var svg = d3.select("svg");
  var inner = svg.select("g");
  
  // Run the renderer. This is what draws the final graph.
- render(g);
+ render();
  
  // Set up zoom support
  var zoom = d3.behavior.zoom().on("zoom", function() {
@@ -68,62 +63,11 @@
    .event(inner);
  
  //use graphviz as layout tool
- function render (g){
-     var src = toDot(g);
+ function render (){
+     var src = $("#source").src;
      var result = Viz(src, { format : "svg", engine : "dot" })    
      var svgResult = _.find($(result), function(item){return item.tagName && item.tagName == 'svg';});
      $('#base_graph svg').remove();
      $('#base_graph').append(svgResult);
-     //bind events
-     /*
-     svg.selectAll("g.node").on("click", function() {
-         var id = $(this).find('title').text();
-         //console.log("Clicked node " + id);
-         //reset all nodes color
-         g.nodes().forEach(function(id){
-             updateNode(id, {fillcolor : '#FFFFFF', latency: ""});
-         });
-         //highlight the clicked node
-         updateNode(id, {fillcolor : '#b2e5ff'});
- 
-         //highlight the nodes to the clicked node
-         g.predecessors(id).forEach(function(id){
-             updateNode(id, {fillcolor : '#e7d6e7'});
-         });
- 
-         //highlight the nodes from the clicked node
-         g.successors(id).forEach(function(id){
-             updateNode(id, {fillcolor : '#fff6d0'});
-         });
-         render(g);
-     });
-     */
  }
- 
- 
- function updateNode(id, value){
-     g.setNode(id, _.extend(g.node(id), value));
- }
- 
- //tranlate the dagre graph to DOT language which graphviz can recognize.
- function toDot(g){
-     var result = [];
-     result.push('digraph g {compound=true; ratio = "fill"; rankdir=LR; graph [ fontname = "Helvetica-Oblique" ];');
-     g.nodes().forEach(function(n){
-         var nodeStr = '"' + n + '" [';
-         $.each(g.node(n), function( key, value ) {
-             nodeStr += key + '= "' + value + '", ';
-         });
-         nodeStr += ' ];';
-         result.push(nodeStr); 
-     });
-     g.edges().forEach(function(e){
-         var color;
-         if(g.node(e.v)['fillcolor'] == '#FFFFFF' || g.node(e.w)['fillcolor']=='#FFFFFF')color = '#00000021'; else color = "#000000";
-         result.push('"' + e.v + '" -> "' + e.w + '" [color = "'+ color +'"];');
-     });
-     result.push('}');
-     return result.join("\n");
- }
- 
  </script>
