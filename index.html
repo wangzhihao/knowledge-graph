@@ -37,7 +37,7 @@
  
  <script id="js">
 
-function init(){
+function setup_zoom_events(){
    // Set up an SVG group so that we can translate the final graph.
    var svg = d3.select("svg");
    var inner = svg.select("g");
@@ -65,10 +65,10 @@ function init(){
  }  
 
  $( document ).ready(function() {
-  init();
   $.get("knowledge-graph.dot", function(data){
     // Run the renderer. This is what draws the final graph.
     render(data);
+    setup_zoom_events();
   });
 });
  </script>
