@@ -33,60 +33,42 @@
  html, body { margin:0; padding:0; overflow:hidden }
  svg { position:fixed; top:0; left:0; height:100%; width:100% }
  </style>
- 
-<pre id="source">
-digraph g {
-  compound=true; 
-  ratio = "fill"; 
-  rankdir=LR; 
-  graph [ fontname = "Helvetica-Oblique" ];
-  
-  //References:
-  "Quantum Computing"[ref="Timeline of quantum computing(https://en.wikipedia.org/wiki/Timeline_of_quantum_computing)"];
-  "Euler product"[ref="https://en.wikipedia.org/wiki/Euler_product"];
-  "Euler's formula"[ref="https://en.wikipedia.org/wiki/Euler%27s_formula"];
-  "Hyperbolic function"[ref="https://en.wikipedia.org/wiki/Hyperbolic_function"];
-  
-  //Paths
-  RSA -> "RSA CRACK" -> "Shor’s Algorithm" -> "Quantum Computing" -> "Hamiltonian mechanics" -> "Euler–Lagrange equation" -> "solves a differential equation" -> "Calculus of variations" 
- "Calculus of variations" -> "chain rule" -> "Every function can be composed of the sum of an even function and an odd function"; 
-
- "Stateless workflow Problem"  -> AKKA -> "Actor Model" -> "Scientific workflow system" -> "Conceptual Modeling";
- "Consistent Hashing & Random trees" -> "Universal hashing & Perfect hashing" -> "Geometric progression" -> series -> "Harmonic series" -> "Riemann zeta function";
- "Harmonic series" -> "Euler product" -> "Euler's formula" -> "Hyperbolic function";
-
-}
-</pre>
  <svg><g id="base_graph"></g></svg>
  
- <script id="js">({});
- 
- // Set up an SVG group so that we can translate the final graph.
- var svg = d3.select("svg");
- var inner = svg.select("g");
- 
- // Run the renderer. This is what draws the final graph.
- render();
- 
- // Set up zoom support
- var zoom = d3.behavior.zoom().on("zoom", function() {
-     inner.attr("transform", "translate(" + d3.event.translate + ")" +
-                                 "scale(" + d3.event.scale + ")");
-   });
- svg.call(zoom);
- // Center the graph
- var initialScale = $(window).width() / document.getElementById('base_graph').getBBox().width;
- zoom
-   .translate([($(window).width() - document.getElementById('base_graph').getBBox().width * initialScale) / 2, ($(window).height() - document.getElementById('base_graph').getBBox().height* initialScale) / 2])
-   .scale(initialScale)
-   .event(inner);
+ <script id="js">
+
+function init(){
+   // Set up an SVG group so that we can translate the final graph.
+   var svg = d3.select("svg");
+   var inner = svg.select("g");
+
+    // Set up zoom support
+   var zoom = d3.behavior.zoom().on("zoom", function() {
+       inner.attr("transform", "translate(" + d3.event.translate + ")" +
+                                   "scale(" + d3.event.scale + ")");
+     });
+   svg.call(zoom);
+   // Center the graph
+   var initialScale = $(window).width() / document.getElementById('base_graph').getBBox().width;
+   zoom
+     .translate([($(window).width() - document.getElementById('base_graph').getBBox().width * initialScale) / 2, ($(window).height() - document.getElementById('base_graph').getBBox().height* initialScale) / 2])
+     .scale(initialScale)
+     .event(inner);
+ }
  
  //use graphviz as layout tool
- function render (){
-     var src = $("#source").text();
-     var result = Viz(src, { format : "svg", engine : "dot" })    
+ function render (data){
+     var result = Viz(data, { format : "svg", engine : "dot" })    
      var svgResult = _.find($(result), function(item){return item.tagName && item.tagName == 'svg';});
      $('#base_graph svg').remove();
      $('#base_graph').append(svgResult);
- }
+ }  
+
+ $( document ).ready(function() {
+  init();
+  $.get("knowledge-graph.dot", function(data){
+    // Run the renderer. This is what draws the final graph.
+    render(data);
+  });
+});
  </script>
