@@ -9,6 +9,7 @@ digraph g {
   "Euler product"[ref="https://en.wikipedia.org/wiki/Euler_product"];
   "Euler's formula"[ref="https://en.wikipedia.org/wiki/Euler%27s_formula"];
   "Hyperbolic function"[ref="https://en.wikipedia.org/wiki/Hyperbolic_function"];
+  "Taylor series"[ref="http://faculty.swosu.edu/michael.dougherty/book/chapter11.pdf"];
   
   //Paths
   RSA -> "RSA CRACK" -> "Shor’s Algorithm" -> "Quantum Computing" -> "Hamiltonian mechanics" -> "Euler–Lagrange equation" -> "solves a differential equation" -> "Calculus of variations" 
