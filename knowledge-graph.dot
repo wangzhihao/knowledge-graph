@@ -15,7 +15,9 @@ digraph g {
  "Calculus of variations" -> "chain rule" -> "Every function can be composed of the sum of an even function and an odd function"; 
 
  "Stateless workflow Problem"  -> AKKA -> "Actor Model" -> "Scientific workflow system" -> "Conceptual Modeling";
- "Consistent Hashing & Random trees" -> "Universal hashing & Perfect hashing" -> "Geometric progression" -> series -> "Harmonic series" -> "Riemann zeta function";
+ "Consistent Hashing & Random trees" -> "Universal hashing & Perfect hashing" -> "Geometric progression" -> series;
+  series -> "Harmonic series" -> "Riemann zeta function";
+  series -> "Taylor series";
  "Harmonic series" -> "Euler product" -> "Euler's formula" -> "Hyperbolic function";
 
 }
