@@ -18,7 +18,7 @@ digraph g {
  "Stateless workflow Problem"  -> AKKA -> "Actor Model" -> "Scientific workflow system" -> "Conceptual Modeling";
  "Consistent Hashing & Random trees" -> "Universal hashing & Perfect hashing" -> "Geometric progression" -> series;
   series -> "Harmonic series" -> "Riemann zeta function";
-  series -> "Taylor series";
+  series -> "Taylor series" -> "Analytic function";
  "Harmonic series" -> "Euler product" -> "Euler's formula" -> "Hyperbolic function";
 
 }
