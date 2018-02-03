@@ -9,7 +9,10 @@ digraph g {
   "Euler product"[ref="https://en.wikipedia.org/wiki/Euler_product"];
   "Euler's formula"[ref="https://en.wikipedia.org/wiki/Euler%27s_formula"];
   "Hyperbolic function"[ref="https://en.wikipedia.org/wiki/Hyperbolic_function"];
-  "Taylor series"[ref="http://faculty.swosu.edu/michael.dougherty/book/chapter11.pdf"];
+  "Taylor series"[
+      ref="http://faculty.swosu.edu/michael.dougherty/book/chapter11.pdf",
+      intuition="Taylor series is a way to match the target function with all order derivative at the some point. As long as this point contains the same information of the other points in the function, Taylor series will totally match the original function, which is also called Analytic function."
+  ];
   
   //Paths
   RSA -> "RSA CRACK" -> "Shor’s Algorithm" -> "Quantum Computing" -> "Hamiltonian mechanics" -> "Euler–Lagrange equation" -> "solves a differential equation" -> "Calculus of variations" 
