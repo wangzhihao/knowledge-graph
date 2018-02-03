@@ -19,6 +19,7 @@ digraph g {
  "Consistent Hashing & Random trees" -> "Universal hashing & Perfect hashing" -> "Geometric progression" -> series;
   series -> "Harmonic series" -> "Riemann zeta function";
   series -> "Taylor series" -> "Analytic function";
+  series -> "Ratio test";
   "Euler's formula" -> "Taylor series";
  "Harmonic series" -> "Euler product" -> "Euler's formula" -> "Hyperbolic function";
 
