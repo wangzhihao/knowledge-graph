@@ -9,7 +9,7 @@ digraph g {
   "Euler product"[ref="https://en.wikipedia.org/wiki/Euler_product"];
   "Euler's formula"[ref="https://en.wikipedia.org/wiki/Euler%27s_formula"];
   "Hyperbolic function"[ref="https://en.wikipedia.org/wiki/Hyperbolic_function"];
-  "inflation"[
+  "Inflation"[
     ref="https://tradingeconomics.com/china/inflation-cpi"
   ];
   
