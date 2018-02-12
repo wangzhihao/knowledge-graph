@@ -9,6 +9,10 @@ digraph g {
   "Euler product"[ref="https://en.wikipedia.org/wiki/Euler_product"];
   "Euler's formula"[ref="https://en.wikipedia.org/wiki/Euler%27s_formula"];
   "Hyperbolic function"[ref="https://en.wikipedia.org/wiki/Hyperbolic_function"];
+  "inflation"[
+    ref="https://tradingeconomics.com/china/inflation-cpi"
+  ];
+  
   "Taylor series"[
       ref="http://faculty.swosu.edu/michael.dougherty/book/chapter11.pdf",
       intuition="Taylor series is a way to match the target function with all order derivatives at the some point. As long as this point contains the same information (in terms of change rate) of the other points in the function, Taylor series will totally match the original function, which is also called Analytic function."
