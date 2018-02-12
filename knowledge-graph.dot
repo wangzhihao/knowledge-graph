@@ -17,6 +17,9 @@ digraph g {
   //Paths
   RSA -> "RSA CRACK" -> "Shor’s Algorithm" -> "Quantum Computing" -> "Hamiltonian mechanics" -> "Euler–Lagrange equation" -> "solves a differential equation" -> "Calculus of variations" 
  "Calculus of variations" -> "chain rule" -> "Every function can be composed of the sum of an even function and an odd function"; 
+ 
+ "Calculus of variations" -> "Euler's number" -> "Compound interest" -> "Bankruptcy" -> "Debt bondage";
+ 
 
  "Stateless workflow Problem"  -> AKKA -> "Actor Model" -> "Scientific workflow system" -> "Conceptual Modeling";
  "Consistent Hashing & Random trees" -> "Universal hashing & Perfect hashing" -> "Geometric progression" -> series;
