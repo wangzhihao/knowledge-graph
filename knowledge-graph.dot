@@ -18,9 +18,12 @@ digraph g {
   RSA -> "RSA CRACK" -> "Shor’s Algorithm" -> "Quantum Computing" -> "Hamiltonian mechanics" -> "Euler–Lagrange equation" -> "solves a differential equation" -> "Calculus of variations" 
  "Calculus of variations" -> "chain rule" -> "Every function can be composed of the sum of an even function and an odd function"; 
  
- "Calculus of variations" -> "Euler's number" -> "Compound interest" -> "Bankruptcy" -> "Debt bondage";
+ "Calculus of variations" -> "Euler's number" -> "Compound interest"; 
+ "Compound interest" -> "Bankruptcy" -> "Debt bondage";
+ "Compound interest" -> "Inheritance tax";
  
-
+ 
+ 
  "Stateless workflow Problem"  -> AKKA -> "Actor Model" -> "Scientific workflow system" -> "Conceptual Modeling";
  "Consistent Hashing & Random trees" -> "Universal hashing & Perfect hashing" -> "Geometric progression" -> series;
   series -> "Harmonic series" -> "Riemann zeta function";
