@@ -10,7 +10,8 @@ digraph g {
   "Euler's formula"[ref="https://en.wikipedia.org/wiki/Euler%27s_formula"];
   "Hyperbolic function"[ref="https://en.wikipedia.org/wiki/Hyperbolic_function"];
   "Inflation"[
-    ref="https://tradingeconomics.com/china/inflation-cpi"
+    ref="https://tradingeconomics.com/china/inflation-cpi",
+    ref="https://tradingeconomics.com/united-states/inflation-cpi"
   ];
   
   "Taylor series"[
