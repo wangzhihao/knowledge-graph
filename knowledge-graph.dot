@@ -9,7 +9,7 @@ digraph g {
   "Euler product"[ref="https://en.wikipedia.org/wiki/Euler_product"];
   "Euler's formula"[ref="https://en.wikipedia.org/wiki/Euler%27s_formula"];
   "Euler's number"[
-  ref="http://www-history.mcs.st-and.ac.uk/HistTopics/e.html";
+    ref="http://www-history.mcs.st-and.ac.uk/HistTopics/e.html";
   ];
   "Hyperbolic function"[ref="https://en.wikipedia.org/wiki/Hyperbolic_function"];
   "Inflation"[
