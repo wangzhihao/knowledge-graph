@@ -8,6 +8,9 @@ digraph g {
   "Quantum Computing"[ref="Timeline of quantum computing(https://en.wikipedia.org/wiki/Timeline_of_quantum_computing)"];
   "Euler product"[ref="https://en.wikipedia.org/wiki/Euler_product"];
   "Euler's formula"[ref="https://en.wikipedia.org/wiki/Euler%27s_formula"];
+  "Euler's number"[
+  ref="http://www-history.mcs.st-and.ac.uk/HistTopics/e.html";
+  ];
   "Hyperbolic function"[ref="https://en.wikipedia.org/wiki/Hyperbolic_function"];
   "Inflation"[
     ref="https://tradingeconomics.com/china/inflation-cpi",
