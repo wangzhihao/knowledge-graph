@@ -21,6 +21,7 @@ digraph g {
  "Calculus of variations" -> "Euler's number" -> "Compound interest"; 
  "Compound interest" -> "Bankruptcy" -> "Debt bondage";
  "Compound interest" -> "Inheritance tax";
+ "Compound interest" -> "Inflation";
  
  
  
