@@ -49,9 +49,8 @@ digraph g {
   series -> "Taylor series" -> "Analytic function";
   series -> "Ratio test";
   "Euler's formula" -> "Taylor series";
- "Harmonic series" -> "Euler product" -> "Euler's formula" -> "Hyperbolic function";
+  "Harmonic series" -> "Euler product" -> "Euler's formula" -> "Hyperbolic function";
 
- "旦旦" -> "Fundamentals of Biology";
  "Fundamentals of Biology" -> "Covalent bond" -> "Chemical bonding model";
  
  "Synthetic diamond";
