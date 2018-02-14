@@ -52,5 +52,6 @@ digraph g {
  "Harmonic series" -> "Euler product" -> "Euler's formula" -> "Hyperbolic function";
 
  "旦旦" -> "Fundamentals of Biology";
- "Fundamentals of Biology" -> "Covalent bond";
+ "Fundamentals of Biology" -> "Covalent bond" -> "Chemical bonding model";
+ 
 }
