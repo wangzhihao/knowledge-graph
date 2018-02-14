@@ -23,11 +23,15 @@ digraph g {
   ];
   
   "INTRODUCTIO IN ANALYSIN INFINITORUM"[
-    ref="http://www.17centurymaths.com/contents/introductiontoanalysisvol1.htm";
+    ref="http://www.17centurymaths.com/contents/introductiontoanalysisvol1.htm"
   ];
   
   "Fundamentals of Biology"[
-    ref="https://ocw.mit.edu/courses/biology/7-01sc-fundamentals-of-biology-fall-2011/";
+    ref="https://ocw.mit.edu/courses/biology/7-01sc-fundamentals-of-biology-fall-2011/"
+  ]
+  "Electron shell"[
+    ref="https://www.quora.com/Why-is-the-maximum-number-of-electrons-in-a-shell-fixed-by-2n-2",
+    ref="https://en.wikipedia.org/wiki/Electron_shell"
   ]
   
   //Paths
