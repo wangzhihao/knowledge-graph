@@ -52,7 +52,7 @@ digraph g {
   "Harmonic series" -> "Euler product" -> "Euler's formula" -> "Hyperbolic function";
 
  "Fundamentals of Biology" -> "Covalent bond" -> "Chemical bonding model";
- "Covalent bond" -> "Periodic table";
+ "Covalent bond" -> "Periodic table" -> "Electron shell";
  
  "Synthetic diamond";
 }
