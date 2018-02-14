@@ -54,4 +54,5 @@ digraph g {
  "旦旦" -> "Fundamentals of Biology";
  "Fundamentals of Biology" -> "Covalent bond" -> "Chemical bonding model";
  
+ "Synthetic diamond";
 }
