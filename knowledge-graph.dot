@@ -66,6 +66,6 @@ digraph g {
  "Fundamentals of Biology" -> "Covalent bond" -> "Chemical bonding model";
  "Covalent bond" -> "Periodic table" -> "Electron shell" -> "Atomic Structure and Spectral Lines" -> "Faraday's laws of electrolysis";
  "Faraday's laws of electrolysis" -> "Electrolysis of water";
- "Faraday's laws of electrolysis" -> "Electrolysis of brine";
+ "Faraday's laws of electrolysis" -> "Electrolysis of brine" -> "Chlorine";
  "Synthetic diamond";
 }
