@@ -39,7 +39,7 @@ digraph g {
   "Electrolysis of water"[
     ref="https://www.youtube.com/watch?v=HQ9Fhd7P_HA"
   ]
-  "Electrolysis of salt water"[
+  "Electrolysis of brine"[
   ref="https://www.youtube.com/watch?v=aY6i_9JV-pM"
   ]
   //Paths
@@ -66,6 +66,6 @@ digraph g {
  "Fundamentals of Biology" -> "Covalent bond" -> "Chemical bonding model";
  "Covalent bond" -> "Periodic table" -> "Electron shell" -> "Atomic Structure and Spectral Lines" -> "Faraday's laws of electrolysis";
  "Faraday's laws of electrolysis" -> "Electrolysis of water";
- "Faraday's laws of electrolysis" -> "Electrolysis of salt water";
+ "Faraday's laws of electrolysis" -> "Electrolysis of brine";
  "Synthetic diamond";
 }
