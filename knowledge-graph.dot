@@ -36,7 +36,9 @@ digraph g {
   "Atomic Structure and Spectral Lines"[
     ref="https://archive.org/details/AtomicStructureAndSpectralLines";
   ]
-  
+  "Faraday's laws of electrolysis"[
+    ref="https://www.youtube.com/watch?v=HQ9Fhd7P_HA"
+  ]
   //Paths
   RSA -> "RSA CRACK" -> "Shor’s Algorithm" -> "Quantum Computing" -> "Hamiltonian mechanics" -> "Euler–Lagrange equation" -> "solves a differential equation" -> "Calculus of variations" 
  "Calculus of variations" -> "chain rule" -> "Every function can be composed of the sum of an even function and an odd function"; 
