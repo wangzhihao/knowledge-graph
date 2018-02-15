@@ -36,7 +36,7 @@ digraph g {
   "Atomic Structure and Spectral Lines"[
     ref="https://archive.org/details/AtomicStructureAndSpectralLines";
   ]
-  "Faraday's laws of electrolysis"[
+  "Electrolysis of water"[
     ref="https://www.youtube.com/watch?v=HQ9Fhd7P_HA"
   ]
   //Paths
@@ -62,5 +62,6 @@ digraph g {
 
  "Fundamentals of Biology" -> "Covalent bond" -> "Chemical bonding model";
  "Covalent bond" -> "Periodic table" -> "Electron shell" -> "Atomic Structure and Spectral Lines" -> "Faraday's laws of electrolysis";
+ "Faraday's laws of electrolysis" -> "Electrolysis of water";
  "Synthetic diamond";
 }
