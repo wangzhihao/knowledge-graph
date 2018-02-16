@@ -37,7 +37,8 @@ digraph g {
     ref="https://archive.org/details/AtomicStructureAndSpectralLines";
   ]
   "Electrolysis of water"[
-    ref="https://www.youtube.com/watch?v=HQ9Fhd7P_HA"
+    ref="https://www.youtube.com/watch?v=HQ9Fhd7P_HA",
+    ref="http://www.xueersi.com/xue/zhishi/3008343.html"
   ]
   "Electrolysis of brine"[
   ref="https://www.youtube.com/watch?v=aY6i_9JV-pM",
