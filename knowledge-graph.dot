@@ -53,6 +53,10 @@ digraph g {
   "Superconductivity"[
     ref="https://www.ted.com/talks/boaz_almog_levitates_a_superconductor"
   ]
+  "Battery"[
+    ref="https://www.youtube.com/watch?v=9OVtk6G2TnQ";
+    ref="http://www.explainthatstuff.com/batteries.html";
+  ]
   
   //Paths
   RSA -> "RSA CRACK" -> "Shor’s Algorithm" -> "Quantum Computing" -> "Hamiltonian mechanics" -> "Euler–Lagrange equation" -> "solves a differential equation" -> "Calculus of variations" 
