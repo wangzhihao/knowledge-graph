@@ -54,8 +54,9 @@ digraph g {
     ref="https://www.ted.com/talks/boaz_almog_levitates_a_superconductor"
   ]
   "Battery"[
-    ref="https://www.youtube.com/watch?v=9OVtk6G2TnQ";
-    ref="http://www.explainthatstuff.com/batteries.html";
+    ref="https://www.youtube.com/watch?v=9OVtk6G2TnQ",
+    ref="http://www.explainthatstuff.com/batteries.html",
+    ref="https://www.youtube.com/watch?v=GhbuhT1GDpI"
   ]
   "Capacitor"[
     ref="https://www.zhihu.com/question/21098120"
