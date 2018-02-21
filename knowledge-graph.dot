@@ -97,4 +97,5 @@ digraph g {
  "Superconductivity" -> "London equations";
  "Battery" -> "Capacitor";
  "Battery" -> "Pacemaker";
+ "Battery" -> "Lithium-ion Battery" -> "Charles Stark Draper Prize";
 }
