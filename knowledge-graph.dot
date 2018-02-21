@@ -57,7 +57,8 @@ digraph g {
     ref="https://www.youtube.com/watch?v=9OVtk6G2TnQ",
     ref="http://www.explainthatstuff.com/batteries.html",
     ref="https://www.youtube.com/watch?v=GhbuhT1GDpI",
-    ref="https://en.wikipedia.org/wiki/Lead%E2%80%93acid_battery"
+    ref="https://en.wikipedia.org/wiki/Lead%E2%80%93acid_battery",
+    ref="http://goodforgas.com/hazardous-gases-associated-lead-acid-battery-charging-stations/"
   ]
   "Capacitor"[
     ref="https://www.zhihu.com/question/21098120"
