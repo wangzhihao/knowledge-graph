@@ -92,4 +92,5 @@ digraph g {
  "Synthetic diamond";
  "Superconductivity" -> "London equations";
  "Battery" -> "Capacitor";
+ "Battery" -> “Pacemaker”;
 }
