@@ -83,6 +83,8 @@ digraph g {
  
  
  
+ 
+ 
  "Stateless workflow Problem"  -> AKKA -> "Actor Model" -> "Scientific workflow system" -> "Conceptual Modeling";
  "Consistent Hashing & Random trees" -> "Universal hashing & Perfect hashing" -> "Geometric progression" -> series;
   series -> "Harmonic series" -> "Riemann zeta function";
@@ -100,4 +102,5 @@ digraph g {
  "Battery" -> "Capacitor";
  "Battery" -> "Pacemaker";
  "Battery" -> "Lithium-ion Battery" -> "Charles Stark Draper Prize";
+ "Charles Stark Draper Prize" -> "Charge-coupled device" -> "Photoelectric Effect" -> "Refraction" -> "Fermat's principle" -> "Brachistochrone Problem" -> "Hamiltonian mechanics";
 }
