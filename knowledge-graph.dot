@@ -91,6 +91,7 @@ digraph g {
  
  "Stateless workflow Problem"  -> AKKA -> "Actor Model" -> "Scientific workflow system" -> "Conceptual Modeling";
  "Consistent Hashing & Random trees" -> "Universal hashing & Perfect hashing" -> "Geometric progression" -> series;
+ "Universal hashing & Perfect hashing" -> "congruence modulo";
   series -> "Harmonic series" -> "Riemann zeta function";
   series -> "Taylor series" -> "Analytic function";
   series -> "Ratio test";
